@@ -9,12 +9,13 @@ class PrincipalController extends Controller
     
     public function inicio_home(){
         return view('principal.modules.home');
+        
     }
     public function login(){
 
         return view('auth.login');
     }
-    public function registro(){
+    public function registrar(){
         // $departamentos = Departamento::all();
         // $provincias = Provincia::all();
         // $municipios = Municipio::all();
@@ -28,6 +29,15 @@ class PrincipalController extends Controller
                 // 'distritos'=>$distritos,
                 // 'direcciones'=>$direccion
         ]);
+    }
+    public function covid19(){
+
+    }
+    public function nosotros(){
+
+    }
+    public function informacion(){
+
     }
 
 

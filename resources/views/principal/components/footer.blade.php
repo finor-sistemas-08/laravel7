@@ -57,8 +57,9 @@
         <div class="col-sm-6 col-md-4">
           <div class="wow fadeInDown" data-wow-delay="0.1s">
             <div class="widget">
-              <h5>Our location</h5>
-              <p>The Suithouse V303, Kuningan City, Jakarta Indonesia 12940</p>
+              <h5>Locaciones Hospitales</h5>
+              <a href="" class="btn btn-skin btn-sm">Mas informacion</a>
+                
 
             </div>
           </div>
