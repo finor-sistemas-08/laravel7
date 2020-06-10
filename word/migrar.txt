@@ -1,0 +1,12 @@
+1. crear el archivo .env con el siguiente comando 
+
+cp .env.example .env
+
+2. instala las librerias con el comando 
+composer install
+
+
+3. genera la key del archivo .env
+php artisan key:generate
+
+

@@ -1,6 +1,6 @@
 <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
     <ul class="nav navbar-nav">
-      <li class=""><a href="">Inicio</a></li>
+      <li class="{{ route('home') }}"><a href="">Inicio</a></li>
       <li class=""><a href="#">Covid 19</a></li>
       <li class=""><a href="#">Informacion General</a></li>      
       <li class=""><a href="#">Quienes Somos</a></li>

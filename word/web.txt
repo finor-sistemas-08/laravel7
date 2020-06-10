@@ -1,0 +1,34 @@
+Base de datos
+https://series.programacionymas.com/tutoriales-sobre-sql-server/base-de-datos-clinica-amplicacion-1
+
+
+API Covid Bolivia
+
+https://github.com/mauforonda/covid19-bolivia
+
+
+para usar un json en laravel
+https://mindicador.cl/
+
+video para json 
+https://www.youtube.com/watch?v=IGfHxvwnf9E&t=606s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+imagen DB
+https://www.google.com/imgres?imgurl=x-raw-image%3A%2F%2F%2Fce0e1a96ac430d369c199a2ae0a53f2e905cbbe44babe4b364188b37103d6709&imgrefurl=https%3A%2F%2Fwww.redalyc.org%2Fpdf%2F849%2F84946834008.pdf&tbnid=Ng1DrJYaDs7sdM&vet=12ahUKEwjw8r6DtPXpAhVFCNQKHf-1DbEQMygEegUIARDJAQ..i&docid=iVGEHFPWPwVgnM&w=760&h=454&q=historial%20clinico%20base%20de%20datos&ved=2ahUKEwjw8r6DtPXpAhVFCNQKHf-1DbEQMygEegUIARDJAQ#h=454&imgdii=WOjNE7QITlJuoM&vet=12ahUKEwjw8r6DtPXpAhVFCNQKHf-1DbEQMygEegUIARDJAQ..i&w=760
+
+
+general archivo .env
+https://www.it-swarm.dev/es/laravel/como-generar-un-archivo-.env-para-laravel/1052060018/
