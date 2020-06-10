@@ -32,3 +32,6 @@ https://www.google.com/imgres?imgurl=x-raw-image%3A%2F%2F%2Fce0e1a96ac430d369c19
 
 general archivo .env
 https://www.it-swarm.dev/es/laravel/como-generar-un-archivo-.env-para-laravel/1052060018/
+
+pagina :comandos github
+https://lemoncode.net/lemoncode-blog/2017/12/12/git-y-visual-studio-code
