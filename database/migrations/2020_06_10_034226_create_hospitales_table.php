@@ -18,8 +18,10 @@ class CreateHospitalesTable extends Migration
             $table->string('nombre',100);
             $table->string('nivel',50);
             $table->string('telefono',20);
-            $table->string('direccion',100);
             $table->string('email',100)->nullable();
+
+            $table->integer('direccion_id')->unsigned();
+            $table->foreign('direccion_id')->references('id')->on('direcciones')->onDelete('cascade');
             $table->timestamps();
         });
     }

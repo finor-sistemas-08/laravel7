@@ -31,6 +31,7 @@ class CreateUsersTable extends Migration
             // $table->timestamps();
         });
         DB::table('users')->insert(array('id'=>1,'usuario'=>'Eldy23','password'=>'123456789','condicion'=>1,'rol_id'=>1));
+        DB::table('users')->insert(array('id'=>2,'usuario'=>'franz11','password'=>'123456789','condicion'=>1,'rol_id'=>2));
 
     }
 

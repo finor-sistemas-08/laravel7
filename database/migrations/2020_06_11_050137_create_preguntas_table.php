@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDiagnosticosTable extends Migration
+class CreatePreguntasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,19 +13,20 @@ class CreateDiagnosticosTable extends Migration
      */
     public function up()
     {
-        Schema::create('diagnosticos', function (Blueprint $table) {
+        Schema::create('preguntas', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('descripcion',200);
-            
-            $table->integer('cita_id')->unsigned();
-            $table->foreign('cita_id')->references('id')->on('citas')->onDelete('cascade');
+            $table->string('pregunta',300);
             $table->timestamps();
-
         });
     }
 
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
     public function down()
     {
-        Schema::dropIfExists('diagnosticos');
+        Schema::dropIfExists('preguntas');
     }
 }

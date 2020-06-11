@@ -14,7 +14,7 @@ class PrincipalController extends Controller
 
         return view('auth.login');
     }
-    public function registro(){
+    public function registrarse(){
         // $departamentos = Departamento::all();
         // $provincias = Provincia::all();
         // $municipios = Municipio::all();
@@ -29,7 +29,13 @@ class PrincipalController extends Controller
                 // 'direcciones'=>$direccion
         ]);
     }
-
-
-
+    public function covid(){
+        return view('principal.modules.covid');
+    }
+    public function informacion(){
+        return view('principal.modules.covid');
+    }
+    public function quienes_somos(){
+        return view('principal.modules.quienes-somos');
+    }
 }

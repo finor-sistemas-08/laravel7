@@ -32,6 +32,13 @@ class CreateDireccionesTable extends Migration
             'zona_barrio'=>'Virgen de cotoca',
             'distrito_id'=>1
         ));
+        DB::table('direcciones')->insert(array(
+            'id'=>1,
+            'calle_avenida'=>'C/5',
+            'numero_domicilio'=>'233',
+            'zona_barrio'=>'Virgen Urkupiñ',
+            'distrito_id'=>1
+        ));
     }
 
     /**

@@ -41,7 +41,7 @@
                       <div class="row">
                         <div class="col-xs-6 col-sm-6 col-md-6">
                           <div class="form-group">
-                            <label>First Name</label>
+                            <label>F</label>
                             <input type="text" name="first_name" id="first_name" class="form-control input-md" data-rule="minlen:3" data-msg="Please enter at least 3 chars">
                             <div class="validation"></div>
                           </div>

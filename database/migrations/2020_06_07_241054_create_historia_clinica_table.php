@@ -14,6 +14,7 @@ class CreateHistoriaClinicaTable extends Migration
     public function up()
     {
         Schema::create('historia_clinica', function (Blueprint $table) {
+            
             $table->increments('id'); 
             $table->string('sexo',10);
             $table->float('peso');

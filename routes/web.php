@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/','PrincipalController@inicio_home')->name('home');
 Route::get('/login','PrincipalController@login')->name('login');
+Route::get('/informacion','PrincipalController@informacion')->name('informacion');
+Route::get('/covid','PrincipalController@covid')->name('covid');
 
 
 

@@ -41,6 +41,17 @@ class CreatePersonasTable extends Migration
                                             'fecha_nacimiento'=>'2000/04/23',
                                             'estado'=>1,
                                             'direccion_id'=>1));
+
+        DB::table('personas')->insert(array('id'=>1,
+                                            'ci'=>'8861190',
+                                            'nombre'=>'Franz Arturo',
+                                            'apellidos'=>'Montoya Claudio',
+                                            'correo'=>'arturofranz@gmail.com',
+                                            'telefono'=>'78188771',
+                                            'nacionalidad'=>'boliviano',
+                                            'fecha_nacimiento'=>'1995/04/23',
+                                            'estado'=>1,
+                                            'direccion_id'=>2));
         
         
     }
