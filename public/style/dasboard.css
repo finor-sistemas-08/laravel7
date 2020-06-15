@@ -1,0 +1,21 @@
+.header-informacion{
+    margin-top: 65px;
+}
+.footer-informacion{
+
+}
+.dasboard{
+    width: 100%;
+    margin-left: 1px;
+}
+
+
+
+.boton-excel{
+    background-color: rgba(9, 214, 98, 0.714);
+    border-radius: 2px ;
+}
+.boton-excel:hover{
+    background-color: rgba(85, 251, 157, 0.714);
+    
+}

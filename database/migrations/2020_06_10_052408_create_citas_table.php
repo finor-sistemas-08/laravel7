@@ -27,6 +27,9 @@ class CreateCitasTable extends Migration
             $table->foreign('medico_id')->references('id')->on('medicos')->onDelete('cascade');
             $table->foreign('historia_clinica_id')->references('id')->on('historia_clinica')->onDelete('cascade');
             $table->timestamps();
+
+
+            
         });
     }
 

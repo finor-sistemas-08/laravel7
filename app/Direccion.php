@@ -10,7 +10,9 @@ class Direccion extends Model
     protected $primaryKey = 'id';
     
     protected $fillable =[ 
-        'nombre',
+        'calle_avenida',
+        'numero_domicilio',
+        'zona_barrio',
         'distrito_id'
     ]; 
 }

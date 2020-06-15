@@ -1,0 +1,5 @@
+CREATE 
+DEFINER=`root`@`localhost` 
+PROCEDURE `eliminar_persona` (IN `persona_id` INT)  NO SQL
+        DELETE  FROM `personas` WHERE `personas`.`id`=persona_id 
+DELIMITER;

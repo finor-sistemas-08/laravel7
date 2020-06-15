@@ -3,38 +3,37 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Providers\RouteServiceProvider;
-use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use App\User;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Redirect;
 
 class LoginController extends Controller
 {
-    /*
-    |--------------------------------------------------------------------------
-    | Login Controller
-    |--------------------------------------------------------------------------
-    |
-    | This controller handles authenticating users for the application and
-    | redirecting them to your home screen. The controller uses a trait
-    | to conveniently provide its functionality to your applications.
-    |
-    */
+    public function showLogin(){
 
-    use AuthenticatesUsers;
+        if (Auth::check())
+        {
 
-    /**
-     * Where to redirect users after login.
-     *
-     * @var string
-     */
-    protected $redirectTo = RouteServiceProvider::HOME;
-
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('guest')->except('logout');
+            return Redirect::to('/');
+        }
+        // Si no hay sesión activa mostramos el formulario
+        return view('auth.login');
     }
+    public function login(Request $request){
+
+        $this->validate($request,[
+            'usuario'=> 'required',
+            'password'=>'required'
+        ]);
+
+
+        if (Auth::attempt(['usuario'=>$request->usuario,'password'=>$request->password])) 
+        {
+            return redirect()->route('/');
+        }
+        
+        return Redirect::back()->with('status', 'Invalid data')->withInput();
+        }
 }

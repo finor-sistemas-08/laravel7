@@ -2,28 +2,64 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+Route::group(['middleware' => ['guest']], function () {
+
+    Route::get('/','PrincipalController@home')->name('home');
+    Route::get('/informacion','PrincipalController@informacion')->name('informacion');
+    Route::get('/covid','PrincipalController@covid')->name('covid');
+    Route::get('/nosotros','PrincipalController@nosotros')->name('nosotros');
+    
+    Route::get('/login','Auth\LoginController@showLogin')->name('showLogin');
+    Route::post('/sesion','Auth\LoginController@login')->name('login');
+
+    Route::get('/usuario/registro','UserController@create')->name('usuario.create');
+    Route::post('/usuario/store','UserController@store')->name('usuario.store');
+
+    Route::get('/users','UserController@index')->name('user');
+
+    Route::get('/usuario','UserController@index')->name('usuario');
+    Route::get('/usuario/registro','UserController@create')->name('usuario.create');
+    Route::post('/usuario/store','UserController@store')->name('usuario.store');
+    Route::post('/usuario/update/{id}','UserController@update')->name('usuario.update');
+    Route::delete('/usuario/delete/{id}','UserController@destroy')->name('usuario.delete');
 
 
-Route::get('/','PrincipalController@inicio_home')->name('home');
-Route::get('/login','PrincipalController@login')->name('login');
-Route::get('/informacion','PrincipalController@informacion')->name('informacion');
-Route::get('/covid','PrincipalController@covid')->name('covid');
+    Route::get('/prueba','BoliviaController@datos');
+});
+
+// Route::group(['middleware' => ['auth']], function () {
+    
+    Route::get('/','PrincipalController@home')->name('home');
+    Route::get('/informacion','PrincipalController@informacion')->name('informacion');
+    Route::get('/covid','PrincipalController@covid')->name('covid');
+    Route::get('/nosotros','PrincipalController@nosotros')->name('nosotros');
+    
+    Route::get('/login','Auth\LoginController@showLogin')->name('showLogin');
+    Route::post('/sesion','Auth\LoginController@login')->name('login');
+
+    Route::get('/usuario/registro','UserController@create')->name('usuario.create');
+    Route::post('/usuario/store','UserController@store')->name('usuario.store');
+
+    Route::get('/users','UserController@index')->name('user');
+
+
+
+    Route::get('/usuario','UserController@index')->name('usuario');
+    Route::get('/usuario/registro','UserController@create')->name('usuario.create');
+    Route::post('/usuario/store','UserController@store')->name('usuario.store');
+    Route::post('/usuario/update/{id}','UserController@update')->name('usuario.update');
+    Route::delete('/usuario/delete/{id}','UserController@destroy')->name('usuario.delete');
+
+    Route::get('/prueba','BoliviaController@datos');
+
+
+// });
 
 
 
 
-// Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+
 
 

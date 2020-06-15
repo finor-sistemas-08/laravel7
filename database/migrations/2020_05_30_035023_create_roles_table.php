@@ -26,7 +26,7 @@ class CreateRolesTable extends Migration
         DB::table('roles')->insert(array('id'=>'3','nombre'=>'Paciente'     ,'descripcion'=>'paciente internado'));
         DB::table('roles')->insert(array('id'=>'4','nombre'=>'Invitado'     ,'descripcion'=>'persona invitada'));
     }
-
+    
 
     public function down()
     {

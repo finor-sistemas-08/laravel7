@@ -33,7 +33,7 @@ class CreateDireccionesTable extends Migration
             'distrito_id'=>1
         ));
         DB::table('direcciones')->insert(array(
-            'id'=>1,
+            'id'=>2,
             'calle_avenida'=>'C/5',
             'numero_domicilio'=>'233',
             'zona_barrio'=>'Virgen Urkupiñ',

@@ -14,6 +14,7 @@
     <link href="{{  asset('medicina/css/owl.theme.css')}}" rel="stylesheet" media="screen" />
     <link href="{{  asset('medicina/css/animate.css')}}" rel="stylesheet" />
     <link href="{{  asset('medicina/css/style.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
     {{-- <link href="{{  asset('izi/css/iziToast.min.css')}}" rel="stylesheet"> --}}
   
     <!-- boxed bg -->
@@ -21,4 +22,5 @@
     <!-- template skin -->
     <link id="t-colors" href="{{  asset('medicina/color/default.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('style/dasboard.css') }}">
   </head>

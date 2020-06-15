@@ -1,0 +1,5 @@
+CREATE 
+DEFINER=`root`@`localhost` 
+PROCEDURE `eliminar_usuario` (IN `usuario_id` INT)  NO SQL
+        DELETE  FROM `users` WHERE `users`.`id`=usuario_id 
+DELIMITER;

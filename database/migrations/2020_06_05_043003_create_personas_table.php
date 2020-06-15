@@ -42,14 +42,14 @@ class CreatePersonasTable extends Migration
                                             'estado'=>1,
                                             'direccion_id'=>1));
 
-        DB::table('personas')->insert(array('id'=>1,
-                                            'ci'=>'8861190',
-                                            'nombre'=>'Franz Arturo',
-                                            'apellidos'=>'Montoya Claudio',
-                                            'correo'=>'arturofranz@gmail.com',
+        DB::table('personas')->insert(array('id'=>2,
+                                            'ci'=>'8861110',
+                                            'nombre'=>'Arely',
+                                            'apellidos'=>'Suarez Mendez',
+                                            'correo'=>'arely22@gmail.com',
                                             'telefono'=>'78188771',
                                             'nacionalidad'=>'boliviano',
-                                            'fecha_nacimiento'=>'1995/04/23',
+                                            'fecha_nacimiento'=>'2000/01/23',
                                             'estado'=>1,
                                             'direccion_id'=>2));
         
